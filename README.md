@@ -1,13 +1,13 @@
-# Deep High-Resolution Representation Learning for Human Pose Estimation (accepted to CVPR2019)
+# A-HRNet: Attention Based High Resolution Network for Human Pose Estimation (ICIP2020 under review)
 ## News
-- Our new work [High-Resolution Representations for Labeling Pixels and Regions](https://arxiv.org/abs/1904.04514) is available at [HRNet](https://github.com/HRNet). Our HRNet has been applied to a wide range of vision tasks, such as [image classification](https://github.com/HRNet/HRNet-Image-Classification), [objection detection](https://github.com/HRNet/HRNet-Object-Detection), [semantic segmentation](https://github.com/HRNet/HRNet-Semantic-Segmentation) and [facial landmark](https://github.com/HRNet/HRNet-Facial-Landmark-Detection).
+- This paper has been submitted to Arxiv, coming soon.
 
 ## Introduction
-This is an official pytorch implementation of [*Deep High-Resolution Representation Learning for Human Pose Estimation*](https://arxiv.org/abs/1902.09212). 
+This is an official pytorch implementation of [*A-HRNet: Attention Based High Resolution Network for Human Pose Estimation*](arxiv link coming soon). 
 In this work, we are interested in the human pose estimation problem with a focus on learning reliable high-resolution representations. Most existing methods **recover high-resolution representations from low-resolution representations** produced by a high-to-low resolution network. Instead, our proposed network **maintains high-resolution representations** through the whole process.
-We start from a high-resolution subnetwork as the first stage, gradually add high-to-low resolution subnetworks one by one to form more stages, and connect the mutli-resolution subnetworks **in parallel**. We conduct **repeated multi-scale fusions** such that each of the high-to-low resolution representations receives information from other parallel representations over and over, leading to rich high-resolution representations. As a result, the predicted keypoint heatmap is potentially more accurate and spatially more precise. We empirically demonstrate the effectiveness of our network through the superior pose estimation results over two benchmark datasets: the COCO keypoint detection dataset and the MPII Human Pose dataset. </br>
+We start from a high-resolution subnetwork as the first stage, gradually add high-to-low resolution subnetworks one by one to form more stages, and connect the mutli-resolution subnetworks **in parallel**. We conduct **repeated multi-scale fusions** such that each of the high-to-low resolution representations receives information from other parallel representations over and over, leading to rich high-resolution representations. As a result, the predicted keypoint heatmap is potentially more accurate and spatially more precise. We empirically demonstrate the effectiveness of our network through the superior pose estimation results over two benchmark datasets: the COCO keypoint detection dataset. </br>
 
-![Illustrating the architecture of the proposed HRNet](/figures/hrnet.png)
+![Illustrating the architecture of the original HRNet](/figures/hrnet.png)
 ## Main Results
 ### Results on MPII val
 | Arch               | Head | Shoulder | Elbow | Wrist |  Hip | Knee | Ankle | Mean | Mean@0.1 |
